@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    
+
+    
+    body {
+
+    font-family: Arial, Helvetica, sans-serif;/* muda a letra */
+    line-height: 1.6; /*tamanho da caixa  */
+    background-color: #f2f2f2;/*muda a cor de fundo  */
+   
+    }
+nav{
+    position: fixed; /* deixa a lista fixa  */
+    top: 0; /* ? */
+    width: 100%; /* largura da caixa  */
+    background-color: #000000cc; /*muda a cor da caixa */
+    padding: 15px 0; /* alinha a caixa */
+    transition: background-color 0.5 ease;
+    
+
+}
+
+nav ul{
+    list-style-type:none;
+    display: flex; 
+    justify-content: center;
+}
+nav ul li{
+
+    margin: 0 30px; /* ? */
+}
+nav ul li a{
+    color:#ffffff; /*muda a cor da lista  */
+    text-decoration: none;/*tira a linha debaixo da lista  */
+    font-size: 18px;/*tamanho da fonte da lista  */
+    padding: 10px;/* alinha a borda  */
+    transition: color 0.6s;
+    box-shadow: 2px 2px 6px #ffffff;
+}
+
+nav ul li a:hover{
+    color: #ff0202; 
+   
+}
+
+section:not(#home) {
+padding: 100px 20px; /* alinha o paragrafo */
+text-align: center; /* alinha o texto no meio */
+display: flex; /* ? */
+justify-content: center; /* ? */
+align-items: center; /* ? */
+height: 100vh; /* muda a altura  */
+}
+
+
+
+#home {
+    /* background-color: #4A90E2 */
+    background-image:url(https://wallpapersmug.com/download/1024x768/968121/super-luxury-car-Koenigsegg-jesko.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: rgb(0, 0, 0); /* muda a cor das letras do inicio/home  */
+    height: 100vh; /* muda a altura da letra do inicio/home  */
+    text-align: center; /* alinha o texto do inicio no meio */
+    display: flex;  /* ? */
+    flex-direction: column; /* alinha a direção do texto */
+    justify-content: center; /* ? alinha o texto no meio ? */
+    align-items: center; /* alinha o botão no meio */
+    font-size:  1.5em; /* muda o tamanho da fonte do inicio/home */
+    
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+justify-content: center;
+
+}
+
+.content img{
+    width: 400px;
+    height: 300px;
+object-fit: cover;
+margin-right: 20px;
+border-radius: 8px;
+}
+
+.content .text{
+    max-width: 600px;
+    text-align: left;
+}
+
+.content .text2 h2{
+   font-size: 2em;
+   margin-bottom: 20px;
+   color: #000000;
+}
+
+.content .text p {
+    font-size: 1.1em;
+    color: #ffffff;
+}
+
+#services{
+    background-color:#000000;
+    color: white;
+}
+
+#about{
+    background-color: #000000;
+    color: white;
+
+    
+}
+
+#contact{
+    background-color: #000000;
+    color: white;
+  
+}
+    .cta-button{
+        margin-top: 30px;
+        background-color:#5a5856;
+        color:rgb(0, 0, 0);
+        padding:15px 30px;
+        font-size: 18px;
+        border: none;
+        cursor: pointer;
+        box-shadow: 6px 6px 8px #000000;
+        transition: background-color 1s ease, transform 1s ease;
+ }
+.cta-button:hover{
+    background-color: #ffffff;
+}
